@@ -1,0 +1,96 @@
+
+	<title></title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Edulearn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+	/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<!-- Bootstrap-Core-Css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<!-- Testimonials-Css -->
+	<link href="assets/css/mislider.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/mislider-custom.css" rel="stylesheet" type="text/css" />
+	<!-- Style-Css -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+	<!-- Font-Awesome-Icons-Css -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+
+
+  
+<div>
+		<br/><br/>
+		<div class="details-w3l py-5">
+				<div class="container py-xl-5 py-lg-3">
+						<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5" >Find 
+								<span class="font-weight-bold">user</span>
+						</h3> 
+				</div>
+		  <div [hidden]="submitted" style="width: 300px;">
+      <form (ngSubmit)="onSubmit()">
+    
+          <div class="form-group">
+              <label for="id"class="colortext">Enter user Id</label>
+              <input type="text" class="form-control form-control"  id="id" required [(ngModel)]="user.id" name="id">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+        </div>
+
+        <ul>
+            <li *ngFor="let user of users">
+              <h3>{{user.id}} - {{user.name}} {{user.username}} {{user.email}} {{user.roles}} {{user.password}}</h3>
+            </li>
+          </ul>
+
+
+        
+    
+      
+        
+      <!-- //banner -->
+      
+    
+      <!-- Js files -->
+      <!-- JavaScript -->
+      <script src="assets/js/jquery-2.2.3.min.js"></script>
+      <!-- Default-JavaScript-File -->
+      <script src="assets/js/bootstrap.js"></script>
+    
+<!-- <div style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="lastname">Id</label>
+      <input type="text" class="form-control" id="id" required [(ngModel)]="id" name="id">
+    </div>
+ 
+    <div class="btn-group">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+</div>
+<ul>
+  <li *ngFor="let user of users">
+    <h3>{{user.id}} - {{user.name}} {{user.username}} {{user.email}} {{user.roles}} {{user.password}}</h3>
+  </li>
+</ul> -->

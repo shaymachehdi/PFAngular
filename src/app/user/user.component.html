@@ -1,0 +1,82 @@
+<!--<div style="padding: 20px;">
+    <h1 style="color: blue">{{title}}</h1>
+    <h2>{{description}}</h2>
+    <nav>
+      <a routerLink="user" class="btn btn-primary active" role="button" routerLinkActive="active">Users</a>
+      <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+      <a routerLink="findbyId" class="btn btn-primary active" role="button" routerLinkActive="active">Search</a>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>-->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Style-Css -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+  <!-- Font-Awesome-Icons-Css -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+  <!-- //Custom-Files -->
+  
+  <!-- Web-Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+   rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <!-- //Web-Fonts -->
+  
+  
+  <div class="details-w3l py-5">
+      <div class="container py-xl-5 py-lg-3">
+          <h3 class="title text-capitalize font-weight-light text-dark text-center mb-5" >Courses
+              <span class="font-weight-bold">List</span>
+          </h3>
+          <div class="col-md-6">
+            
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>Id</th>
+                <th>Designation</th>
+                <th>Desciption</th>
+          
+                
+              </tr>
+              
+              <tbody>
+              <tr *ngFor="let c of courses">
+              
+                <td>{{c.id}}</td>
+                <td >{{c.designation}}</td>
+                <td>{{c.description}}</td>
+                
+              </tr>
+              </tbody>
+            </table>
+            </div>
+  
+ <!-- <div *ngFor="let user of users | async" style="width: 300px;">
+    <user-details [user]='user'></user-details>-->
+    
+  </div>
+  
+  
+  <script src="assets/js/jquery-2.2.3.min.js"></script>
+  <!-- Default-JavaScript-File -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Necessary-JavaScript-File-For-Bootstrap -->
+  
+  <!-- numscroller-js-file -->
+  <script src="assets/js/numscroller-1.0.js"></script>
+  <!-- //numscroller-js-file -->
+  
+  <!-- smooth scrolling -->
+  <script src="assets/js/SmoothScroll.min.js"></script>
+  <!-- //smooth scrolling -->
+  
+  <!-- move-top -->
+  <script src="assets/js/move-top.js"></script>
+  <!-- easing -->
+  <script src="assets/js/easing.js"></script>
+  <!--  necessary snippets for few javascript files -->
+  <script src="assets/js/edulearn.js"></script>
+  
+  <!-- //Js files -->
+  
+  
